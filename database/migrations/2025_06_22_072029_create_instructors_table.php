@@ -14,6 +14,14 @@ return new class extends Migration {
             $table->text('bio')->nullable();
             $table->string('phone', 20)->nullable();
             $table->string('profile_photo_path')->nullable();
+            $table->text('description')->nullable();
+            $table->string('address_line_1');
+            $table->string('address_line_2')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zip_code')->nullable();
+            $table->string('country')->nullable();
+            $table->decimal('salary', 10, 2)->nullable();
             $table->timestamps();
         });
     }
